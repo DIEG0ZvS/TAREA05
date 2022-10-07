@@ -8,36 +8,16 @@ public class main {
         tienda.setNombre("Tienda Don Paco");
         tienda.setDireccion("Jr.Aguilar");
 
-        Cliente cliente = new Cliente();
-        cliente.setCodigo(1234567);
-        cliente.setNombre("Danna");
-        cliente.setApellido("Ponce Leon");
-
-        System.out.println("Cliente 1: "+cliente.getNombre()+", "+cliente.getApellido()+", "+cliente.getCodigo());
-
-
-        Cliente cliente1 = new Cliente();
-        cliente1.setCodigo(3456789);
-        cliente1.setNombre("Carlos");
-        cliente1.setApellido("Cuarite Estrada");
-
-        System.out.println("Cliente 2: "+cliente1.getNombre()+", "+cliente1.getApellido()+", "+cliente1.getCodigo());
-
-
-        Cliente cliente2 = new Cliente();
-        cliente2.setCodigo(7555689);
-        cliente2.setNombre("Emanuel");
-        cliente2.setApellido("Mozart Pillco");
-
-        System.out.println("Cliente 3: "+cliente2.getNombre()+", "+cliente2.getApellido()+", "+cliente2.getCodigo());
-
-
-        Cliente cliente3 = new Cliente();
-        cliente3.setCodigo(9327578);
-        cliente3.setNombre("Cesar");
-        cliente3.setApellido("Idalgo Vieso");
-
-        System.out.println("Cliente 4: "+cliente3.getNombre()+", "+cliente3.getApellido()+", "+cliente3.getCodigo());
+        tienda.agregarCliente(new Cliente("Carlos","Escobar",9000));
+        tienda.agregarCliente(new Cliente("Miguel","Ponce",7000));
+        tienda.agregarCliente(new Cliente("Poleo","Anguel",3000));
+        tienda.agregarCliente(new Cliente("Manuel","Rodrigo",6000));
+        tienda.agregarCliente(new Cliente("Jorge","Dayiro",5000));
+        tienda.agregarCliente(new Cliente("Antony","Jose",2000));
+        tienda.agregarCliente(new Cliente("Sebastean","Diana",1000));
+        tienda.agregarCliente(new Cliente("Comedic","Portral",4000);
+        tienda.agregarCliente(new Cliente("Erick","Chusa",8000));
+                              
         System.out.println("Nombre de tienda: " + tienda.getNombre() + ", Direccion: " + tienda.getDireccion());
 
 
